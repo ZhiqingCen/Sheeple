@@ -1,0 +1,69 @@
+Date        |Start  |Stop   |Activity       |Comments
+31.07.2020  |11:00  |12:40  |reading        |
+01.08.2020  |11:00  |14:00  |coding         |subset 0
+02.08.2020  |15:45  |17:20  |coding         |subset 0
+02.08.2020  |19:00  |19:42  |coding         |subset 0 - passed examples/0/*
+03.08.2020  |12:40  |16:00  |coding         |subset 1
+03.08.2020  |20:30  |21:00  |coding         |subset 1
+03.08.2020  |22:50  |24:10  |coding         |subset 2
+04.08.2020  |15:40  |17:41  |coding         |subset 2
+04.08.2020  |19:30  |23:26  |coding         |subset 3
+07.08.2020  |18:00  |19:20  |coding         |demo00 & demo01
+09.08.2020  |12:40  |18.11  |coding         |demo02-04 & test00-05 & fix bug
+
+Subset0
+✔️ =
+✔️ $
+✔️ #
+✔️ echo
+
+Subset1
+✖️ ?
+✖️ *
+✔️ []
+✔️ for do done
+✔️ exit
+✔️ read
+✔️ cd
+
+Subset2
+✔️ '
+✔️ "
+✔️ if then else elif fi
+✔️ while
+✔️ test
+✔️ expr
+✔️ $1 $2 $3...
+
+Subset3
+✔️ `
+✔️ $()
+✔️ $(())
+✖️ []
+✖️ echo -n
+✖️ $# $* $@
+
+Subset4
+✖️ < >
+✖️ &&
+✖️ ||
+✖️ ;
+✖️ {}
+✖️ case esac
+✖️ local
+✖️ return
+✖️ mv
+✖️ chmod
+✖️ ls
+✖️ rm
+
+
+./sheeple.pl examples/3/sequence0.sh
+
+->  autotest
+2041 autotest sheeple
+
+->  give
+give cs2041 ass2_sheeple sheeple.pl diary.txt
+give cs2041 ass2_sheeple sheeple.pl diary.txt demo??.sh
+give cs2041 ass2_sheeple sheeple.pl diary.txt demo??.sh test??.sh
